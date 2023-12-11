@@ -152,9 +152,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586c3f9fea097c041a81d92780744fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coin: {fileID: 5104455315734104562, guid: a339b7462ad8442e8b3662e84d3a9dd4, type: 3}
+  CoinsArray:
+  - {fileID: 5104455315734104562, guid: 1ac6c64001afa7c4b99b2f29dac1a1f0, type: 3}
+  - {fileID: 5104455315734104562, guid: e65fef8f51572544c90bdf7a24fe4a14, type: 3}
+  - {fileID: 5104455315734104562, guid: a339b7462ad8442e8b3662e84d3a9dd4, type: 3}
+  BadCoinCount: 0
   BadCoin: {fileID: 1881301801498186842, guid: 7dc17ce92efcb46d8acd793b50bf4832, type: 3}
   startDelay: 0
+  radio: 5
 --- !u!4 &40546129
 Transform:
   m_ObjectHideFlags: 0
@@ -267,10 +272,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerspeed: 15
+  Check: 0
   Coin_SE: {fileID: 8300000, guid: 683b96a3c05dcf142b6541281828e7e3, type: 3}
   BadCoin_SE: {fileID: 8300000, guid: 1957d346dd213284e8157d5affb075a8, type: 3}
   GameOver: {fileID: 8300000, guid: 757a44bcd01eb8d40baaa904cba2b4ea, type: 3}
   GameComplete: {fileID: 8300000, guid: dbf739b48d0486d4ab87762b847aaad8, type: 3}
+  Coin_FX: {fileID: 8863253263645004699, guid: f5e8b80b87b40c844b0caa47c371231d, type: 3}
+  BadCoin_FX: {fileID: 686525162354524941, guid: 17ef04a12f159bb45bb137a674e2bb50, type: 3}
+  GameOver_FX: {fileID: 4459381674328488624, guid: 569d7615b34c72c4bbe38edcdebeecce, type: 3}
+  GameComplete_FX: {fileID: 937783928009087542, guid: 281415bc14ee18a49abeee6d8514e2a6, type: 3}
 --- !u!82 &177611668
 AudioSource:
   m_ObjectHideFlags: 0
@@ -453,7 +463,7 @@ Transform:
   m_GameObject: {fileID: 476106886}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 8.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

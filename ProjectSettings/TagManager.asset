@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Good Coin
+  - Bad Coin
+  - FxTemporaire
+  - Silver Coin
+  - Bronze Coin
   layers:
   - Default
   - TransparentFX
